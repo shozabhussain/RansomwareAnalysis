@@ -38,6 +38,10 @@ calculate the file operations done by the ransomware.
 This script extracts the maximum density changed from densities, number of new files, and file operations
 of a ransomware and add that data to the summary.csv file
 
+# SHA256 Collection
+A full_sha256.txt file can be downloaded from [Malwarebazaar](https://bazaar.abuse.ch/export/). 
+HashesSort.py is the script which will query each SHA256 from malwarebazaar get metadata in response
+SHA256 will be filtered according to the ransomware tag and sorted according to the binary extension
 
 
 
