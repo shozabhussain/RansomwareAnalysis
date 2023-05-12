@@ -6,7 +6,7 @@ Published the the CST'23 FILLIN
 Broadly, the code can be used to download batches of malware samples from [MalwareBazaar](https://bazaar.abuse.ch/), run them in a windows virtual machine and extract procmon logs provided as  input to [SPADE](https://github.com/ashish-gehani/SPADE).  The code depends on two virtual machine images: 1) `ransomwareVm.ova` - a windows 10 snapshot that has been prepared (procmon running etc.) to run a ransomware sample and 2) `spadeVm.ova` - a Ubuntu XXX image that has takes the output from the windows image and transforms it into a graphviz "dot" file. These images are available upon request to the author. The basic instructions to start running are:
 
 1. Download and unzip the 7zip and Process Monitor folders in the repo
-2. run setup.py, this will import the two images into virtualbox(if the respective ovas are present in the repo) and make snapshots of them
+2. run setup.py, this will import the two images into virtualbox (if the respective ovas are present in the repo) and make snapshots of them
 3. use the supplied "vm_hashes_exe.txt" file, a list of malware sha256 hashes from MalwareBazaar (this can be easily updated using Malware Bazaar's csv download)
 4. run vmAutomation.py to collect logs, file-operations, densities, and screenshots for each hash in the previous step
 5. run csv_populate to generate a summary of the dataset
