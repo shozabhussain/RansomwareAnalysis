@@ -40,8 +40,8 @@ of a ransomware and add that data to the summary.csv file
 
 # SHA256 Collection
 A full_sha256.txt file can be downloaded from [Malwarebazaar](https://bazaar.abuse.ch/export/). 
-HashesSort.py is the script which will query each SHA256 from malwarebazaar get metadata in response
-SHA256 will be filtered according to the ransomware tag and sorted according to the binary extension
+HashesSort.py is the script which will query each SHA256 from malwarebazaar and get metadata in response.
+SHA256 will be filtered according to the ransomware tag and sorted according to the binary extension.
 
 
 
